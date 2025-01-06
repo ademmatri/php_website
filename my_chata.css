@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+}
+body{ 
+    
+    padding:0;
+    margin:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x:hidden;
+    background-color: #E1E8ED; 
+    background-image: url("mysitelogo.png"); 
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-position-y: -20px;
+}
+.infoSignup{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 10px;
+    cursor: pointer;
+    top:10px;
+}
+.infoSignupMsg{
+    width: 265px;
+    height: 75px;
+    right: 30px;
+    top: 32px;
+    z-index: 1;
+    font-size: 17px;
+    padding:7px 2px 0px 2px;
+    background-color: #bfcdeb;
+    border-radius: 10px 0px 10px 10px;
+    position: absolute;
+}
+#cnd{
+    color: rgb(226, 9, 9);
+    text-decoration: none;
+}
+.b1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:24px;
+    border:none;
+    background-color: #ef5350;
+    border-radius:6px;
+    color:white;    
+    height:60px;
+    width:240px;
+    cursor:pointer;
+    transition:0.2s; 
+    overflow:hidden;   
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 56px;  
+    letter-spacing:1px;      
+}
+.form{
+    margin-top: 18px;
+    height: 520px;
+    width: 350px;
+    padding-right: -1%;
+}
+.titre1{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 115px;
+    color: #fff;
+}
+.in1{   
+    position: absolute;
+    font-size: 14px;
+    border-style:double;  
+    padding-left: 8px; 
+    margin-top: 60px;
+    margin-left: 60px;
+    height: 50px;
+    width: 230px;
+}
+.idn1{
+    position: absolute;
+    border-style:double;
+    padding-left: 8px;
+    height: 50px;
+    width: 230px;
+    margin-top: 120px;
+    margin-left: 60px;
+}
+.pass_input{
+    position: absolute;
+    border-style:double;
+    margin-top: 240px;
+    margin-left: 60px;
+    height: 50px;
+    width: 230px;
+    padding-left: 8px;
+}
+.email_input{
+    font-size: 14px;
+    position: absolute;
+    border-style:double;
+    margin-top: 180px;
+    margin-left: 60px;
+    height: 50px;
+    width: 230px;
+    padding-left: 8px;
+}
+.pass_input_confirm{
+    position: absolute;
+    border-style:double;
+    margin-top: 300px;
+    margin-left: 60px;
+    padding-left: 8px;
+    height: 50px;
+    width: 230px;
+
+}
+.term{
+    position: absolute;
+    margin-top: 362px;
+    margin-left: 60px;
+}
+.term_of_use{
+    font-size: 14px;
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 80px;
+}
+.form2{ 
+    border-radius: 5px;
+    margin-top: 0px;
+    height: 450px;
+    width: 350px;
+}
+.email_login{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 60px;
+    padding-left: 8px;
+    height: 50px;
+    width: 230px;
+}
+.pass_input_login{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 60px;
+    padding-left: 8px;
+   
+    height: 50px;
+    width: 230px;
+
+}
+.b2{
+    position: absolute;
+    margin-top: 245px;
+    margin-left: 55px;  
+    letter-spacing:1px; 
+    font-size:24px;
+    border:none;
+    background: #9a4ce2;
+    border-radius:6px;
+    color:#FFFFFF;    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height:60px;
+    width:240px;
+    cursor:pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+.b2:hover{
+    background: rgb(140, 63, 212);
+    
+}
+.titre2{
+    position: absolute;
+    margin-left: 128px;
+    margin-top: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:30px;
+    letter-spacing: 1px;
+    color: rgb(154, 76, 226);
+    user-select: none;
+}
+.titre3{
+    position: absolute;
+    margin-left: 115px;
+    margin-top: 10px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:30px;
+    letter-spacing: 1px;
+    color: #ef5350;
+    user-select: none;
+}
+
+.div1{
+    opacity: 1;
+    background-color: white;
+    position: absolute;
+    border-radius: 8px;
+    height: 450px;
+    margin-top: 685px;  
+}
+.div2{ 
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    background-color: rgb(0, 0, 0,0.5);
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition:0.25s;
+    -ms-transition:0.25s;
+    -o-transition: 0.25s;
+    z-index: -1;
+    width: 200%;
+    height: 200%;
+    margin-left: -334px;
+    margin-top: 570px;
+    user-select: none;
+    opacity: 0;
+}
+.div_of_box{
+    position: absolute;
+    background-color: #fdfdfd;
+    margin-left: 683px;
+    margin-top: 70px;
+    height: 500px;
+    display: flex;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    border-radius: 8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+    
+
+}
+.active{
+    opacity: 1;
+    z-index: 1;
+}
+.forget_pass{
+    position: absolute;
+    margin-top: 325px;
+    margin-left: 115px;
+    text-decoration: none;
+    
+}
+.forget_pass:hover{
+    text-decoration:underline;
+}
+.b4{
+    position: absolute;
+    font-size:24px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e43431;
+    color:white;    
+    height:60px;
+    width:240px;
+    cursor:pointer;
+    margin-top: -80px;
+    margin-left: 56px;  
+    letter-spacing:1px;
+    transition: 0.2s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+}
+.b4:hover{
+    background: #ce2320;
+}
+.log_hr{
+    position: absolute;
+    
+    width: 250px;
+    color: black;
+    
+    margin-top: 350px;
+    margin-left: 49px;
+}
+.back_icon{
+    position: fixed;
+    font-size: 23px;
+    margin-left: 15px;
+    transition: 0.2s;
+    margin-top: 10px;
+    cursor:pointer;
+}
+.back_icon:hover{
+
+    font-size: 28px;
+}
+.remember_me_box{
+    position: absolute;
+   
+    margin-top: 216px;
+    margin-left: 55px;
+}
+.remember_me{
+    position: absolute;
+   
+    margin-top: 215px;
+    margin-left: 75px;
+}

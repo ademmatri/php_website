@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    padding:0;
+    margin:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x:hidden;
+    background: #eaedf0;
+}
+section{
+    width: 550px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 0px 30px 0px 30px;
+    overflow-y:auto;
+}
+section::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+section::-webkit-scrollbar
+{
+    width: 5px;  
+    background-color: #F5F5F5;
+}
+section::-webkit-scrollbar-thumb
+{
+  background-color: #5A5EB9;
+}
+#btnAdd{
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    margin-left: 370px;
+    margin-top: 20px;
+    background-color: rgb(234, 233, 238);
+    font-size: 16px;
+    transition: 0.2s;
+    font-family: sans-serif;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    color: black;
+}
+#btnAdd:hover{
+    background-color: rgb(218, 215, 240);
+}
+#btnAdd:active{
+    background-color: rgb(208, 202, 255);
+}
+#addImg{
+    pointer-events: none;
+    width:25px;
+    height: 25px;
+    margin-left: -20px;
+}
+#bar_account{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.103) -1px 1px 3px ;
+    border-radius: 8px;
+    height: 80px;
+    margin-top: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+#addHim{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    margin-top: -2px;
+}
+#frofile_photo{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+#nom{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 120px;
+    font-weight: 600;
+    width: 200px;
+    height: 25px;
+    font-size: 19px;   
+    font-family:  "Gill Sans Extrabold", sans-serif;
+}
+#notfound{
+    margin-top: 250px;
+    height: 30px;
+    background-color: red;
+}
+#notfound pre{
+    text-align: center;
+    font-size: 25px;
+}
+#contactPhoto{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
