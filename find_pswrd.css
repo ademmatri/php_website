@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    padding:0;
+    margin:0;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-x:hidden; 
+    background-image: url("find-account-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box{
+    position: absolute;
+    background-color: rgb(28, 35, 36);
+    border-radius: 10px;
+    width: 600px;
+    height: 380px;
+    margin-top: -100px;
+}
+.tab{
+    margin-left: 20px;
+}
+.hr1{
+    position: relative;
+    margin-left: -22.5px;
+    width: 600px;
+}
+.hr2{
+    position: relative;
+    margin-top: 30px;
+    margin-left: 0px;
+    width: 550px;
+}
+.text{
+    position: relative;
+    color: #ccc;
+    font-weight: 200;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+}
+.input_text{
+    position: relative;
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 50px;
+    width: 300px;
+    border-radius: 3px;
+    border:none;
+    font-weight: 300;
+    font-size:17px;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #4f4f4f;
+}
+.btn_cancel{
+    position: relative;
+    margin-top: 10px;
+    height:50px;
+    width:120px;
+    transition: 0.2s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+    cursor:pointer;
+    background-color: #6f6f6f;
+    color: #dfdfdf;
+    border-radius:6px;
+    letter-spacing:1px;
+    font-size:20px;
+    font-weight: 200;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    border:none;
+}
+.btn_cancel:hover{
+    background-color: #5a5a5a;
+}
+.btn_cancel:active{
+    background-color: #808080;
+}
+.btn_search{
+    position: relative;
+    cursor:pointer;
+    color:#ccc; 
+    margin-top: 10px;
+    margin-left:280px;
+    background:  #780bab; 
+    border-radius:6px;
+    border:none;
+    font-size:20px;
+    font-weight: 200;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    letter-spacing:1px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    height:50px;
+    width:150px;
+}
+#nobb{
+    position: absolute;
+    color: red;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Inscription ou connexion | MyChata</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="siteLogo1.png" sizes="120×120"/>
+        <link rel="stylesheet" type="text/css" href="stupid.css" />
+        <script src="my_chata.js" defer ></script>  
+    </head>
+    <body>
+        <div class="div1">
+            <form class="form2" autocomplete="off" method="post" action="phpfiles/login.php" onsubmit="setCookie()">
+                <h2 class="titre2">Login</h2>
+                <input class="email_login" name="log_email" autocomplete="off" type="email" placeholder="Email" required >
+                <input class="pass_input_login" autocomplete="off" name="log_password" type="password" placeholder="Password" required>
+                <input class="remember_me_box" name="r" type="checkbox"><label class="remember_me">Remember me</label>
+                <hr class="log_hr">
+                <a href="find_pswrd.php" class="forget_pass" >Forgot Password?</a>
+                <button class="b2"  type="submit" name="send_log" ><span>Login</span></button>
+            </form>
+                <button class="b4">Sign up</button>
+        </div>
+        <div class="div2">
+            <div class="div_of_box">
+                <i class="back_icon" hidden>&#8592;</i>
+                <form class="form" name="form" autocomplete="off"  method="post" action="phpfiles/signup.php" >
+                    <h2 class="titre3">Sign up</h2>
+                    <img class="infoSignup" src="info.png" onclick="showSignInfo()" >
+                    <span class="infoSignupMsg" hidden>You should sign up with your Gmail. A verification code will be sent to your Gmail.</span>
+                    <input class="in1" name="pseudo" type="text" id="userName"  placeholder="Pseudo"required>
+                    <input class="idn1" name="surname" type="text" placeholder="Surname " required>
+                    <input class="email_input" name="email" type="email" placeholder="Email" required>
+                    <input class="pass_input" name="password" type="password" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z]).{8,}" >
+                    <input class="pass_input_confirm" name="confirm_password" type="password" placeholder="Confirm password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+                    <button class="b1" type="submit" onclick="saveInSession()" name="send" ><span>Sign up</span></button>
+                    <input class="term" type="checkbox" required ><pre class="term_of_use">I agree <a id="cnd" href="termOfUse.html">Conditions</a> of Use.</pre>
+                    <input type="text" name="ipo" class="ip1" hidden >
+                    <input type="text" name="location" class="location" hidden>
+                    <input class="otp_calcul" id="ww" name="otp_calcul" type="number" inputmode="numeric" hidden>
+                </form>
+            </div>
+        </div> 
+        <script>
+            async function fetchText(){
+                let curl ="https://ipinfo.io/json?token=4ad649fff8a7fb";
+                let response = await fetch(curl);
+                let data = await response.json();
+                timezone =data.timezone;
+                city=data.city;
+                region=data.region;
+                ip=data.ip;
+                document.querySelector(".ip1").value = ip;
+                document.querySelector(".location").value = timezone + "=>"+ region+"=>"+city;
+            }
+            fetchText();
+        </script>
+    </body>
+</html>

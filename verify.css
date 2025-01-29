@@ -1,0 +1,135 @@
+body {
+    overflow: hidden;
+    background-image: url("verifbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.otc {
+    display: grid;
+    place-items: center;
+}
+#importantmessage{
+    color: rgb(223, 223, 223);
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+}
+.allverif{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    place-items: center;
+    background-color: rgb(42, 42, 42);
+    border-radius: 8px;
+    width: 400px;
+    height: 350px;
+
+}
+.otc fieldset {
+    border:0;
+    place-items: center;
+}
+
+.otc fieldset div {
+    display: flex;
+    align-items: center;
+}
+
+.otc legend {
+    margin: 0 auto 1em;
+    color: rgb(223, 223, 223);
+    font-weight: 200;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+}
+
+input[type="number"] {
+    width: .82em;
+    line-height: 1;
+    margin: .1em;
+    padding: 8px 0 4px;
+    font-size: 2.65em;
+    text-align: center;
+    appearance: textfield;
+    -webkit-appearance: textfield;
+    border: 2px solid #BBBBFF;
+    color: rgb(255, 97, 255);
+    border-radius: 4px;
+    background-color: rgb(87, 87, 87);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* 2 group of 3 items */
+input[type="number"]:nth-child(n+4) {
+order: 2;
+}
+.otc div::before {
+    content: '';
+    height: 2px;
+    width: 24px;
+    margin: 0 .25em;
+    order: 1;
+    background: #BBBBFF;
+}
+
+/* From: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034 */
+.otc label {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+body, html {
+height: 100%;
+}
+.wait_verif{
+
+    width: 120px;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: #46bb78;
+    color: white;
+    font-size: 20px;
+    transition: 0.1s;
+}
+.wait_verif:hover{
+    letter-spacing: 2px;
+}
+.check{
+    letter-spacing: 0.5px;
+    color: rgb(223, 223, 223);
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+}
+.ic{
+    font-size: large;
+    color: red;
+}
+.emptyInp{
+    letter-spacing: 0.5px;
+    font-size: large;
+    color: red;
+}
+.correct{
+    letter-spacing: 0.5px;
+    font-size: large;
+    color: green;
+}
